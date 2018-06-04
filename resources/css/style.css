@@ -1,0 +1,355 @@
+/*
+darkcyan #008b8b
+cyan secundario #005858
+*/
+
+/*-----------------------------------------------*/
+/*----------------- Basic Setup -----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #FFF;
+    color: #222;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+/*-----------------------------------------------*/
+/*---------------- Reusable Code ----------------*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.clearfix::after { /* para limpiar floats */
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*-----------------------------------------------*/
+/*-------------- Headings / titles --------------*/
+
+h1 {
+    margin: 0;
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 350%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    word-spacing: 2px;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+h2::after { 
+    display: block;
+    height: 2px;
+    background-color: #008b8b;
+    content: " ";
+    width: 150px; 
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*-----------------------------------------------*/
+/*------------------- Buttons -------------------*/
+
+.btn:link,
+.btn:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 200px;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type=submit]{ /* Section 0 Header */
+    background-color: #008b8b;
+    border: 1px solid #fff;    
+} 
+
+.btn-empty:link, 
+.btn-empty:visited { /* Section 0 Header */
+    border: 1px solid #fff;
+}
+
+.btn:hover,
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active { /* Section 0 Header */
+    background-color: #005858;
+}
+
+/*---------------------------------------------------------------*/
+/*--------------------- Seccion 0 Principal ---------------------*/
+
+header {
+    background-image: linear-gradient(rgba(26, 26, 26, 0.5), rgba(0, 0, 0, 0.9)), url(img-backgrounds/rio.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: auto;
+}
+
+.text-box {
+    position: absolute;
+    width: 1140px;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+}
+
+.logo { /* div que contiene al logo */
+    float: left;
+}
+
+.logo p {  /* texto del logo*/
+    display: inline-block;
+    margin: 30px 10px;
+    font-size: 140%;
+    color: #fff;
+}
+
+.logo i { /* icon del logo*/
+    font-size: 150%;
+    color: #fff;
+}
+
+.main-nav { /* div que contiene los botones de navegacion */
+    float: right;
+    margin-top: 35px;
+}
+
+.main-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 90%;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #008b8b;
+}
+
+/*---------------------------------------------------------------*/
+/*--------------------- Seccion 1 Ubicacion ---------------------*/
+
+
+/*-----------------------------------------------------------------*/
+/*------------------------ Seccion 2 Hotel ------------------------*/
+
+.hotel-pictures-row {
+    list-style: none;
+    width: 100%;
+
+}
+
+.hotel-pictures-row li {
+    display: block;
+    float: left;
+    width: 25%;
+    overflow: hidden;
+}
+
+.hotel-photo {
+    width: 100%;
+    background-color: #000;
+}
+
+.hotel-photo img{
+    opacity: 0.7; /* opacidad al 70% significa que la imagen es un 30% transparente */
+    width: 100%;
+    height: auto;
+    margin: 0;
+    transform: scale(1.15); /* escalo la imagen un 15% más del tamaño que debe tener */
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.hotel-photo img:hover{
+    opacity: 1;
+    transform: scale(1.04);
+}
+
+/*-----------------------------------------------------------------*/
+/*--------------------- Seccion 3 Testimonios ---------------------*/
+
+.section-customers {
+    height: 100vh;
+    width: auto;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img-backgrounds/fondo-testimonials.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+}
+
+blockquote {
+    padding: 2%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+}
+
+blockquote::before {
+    content: "\201C";
+    font-size: 600%;
+    color: #008b8b;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+
+cite {
+    font-size: 90%;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    border-radius: 50%;
+    width: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/*------------------------------------------------------------------*/
+/*----------------------- Seccion 4 Contacto -----------------------*/
+
+.contact-form {
+    width: 60%;
+    margin: 0 auto;
+    font-size: 90%;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=date],
+textarea {
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+textarea {
+    width: 100%;
+}
+
+textarea {
+    height: 140px;
+}
+
+input[type=checkbox] {
+    margin: 10px 5px 10px 0px;
+}
+
+*:focus {
+    outline: none;
+}
+
+/*------------------------------------------------------------------*/
+/*------------------------ Seccion 5 Footer ------------------------*/
+
+footer {
+    padding: 25px 0;
+    background-color: #151515;
+    color: #bababa;
+}
+
+.footer-logo {
+    margin: 0 auto;
+    max-width: 200px;
+    text-align: center;
+    font-size: 115%;
+    margin-bottom: 15px;
+}
+
+.footer-logo i, .footer-logo p {
+    display: inline-block;
+}
+
+.footer-logo p {
+    margin-left: 10px;
+}
+
+.footer-social { text-align: center; }
+
+.footer-social li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.footer-social li a:link,
+.footer-social li a:visited {
+    text-decoration: none;
+    color: #bababa;
+    font-size: 120%;
+}
+
+.ion-social-facebook,
+.ion-social-twitter,
+.ion-social-instagram,
+.ion-social-youtube {
+    color: #bababa;
+    transition: color 0.2s;
+}
+
+.ion-social-facebook:hover { color: #3b5999; }
+
+.ion-social-twitter:hover { color: #55acee; }
+
+.ion-social-instagram:hover { color: #e4405f; }
+
+.ion-social-youtube:hover { color: #cd201f; }
+
+.author {
+    text-align: center;
+    font-size:75%;
+    margin-top: 10px;
+}
+
+
