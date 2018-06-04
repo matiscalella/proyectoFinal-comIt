@@ -172,6 +172,37 @@ header {
 /*---------------------------------------------------------------*/
 /*--------------------- Seccion 1 Ubicacion ---------------------*/
 
+.section-location {
+    background-color: #f4f4f4;
+    height: 100vh;
+    padding-top: 40px;
+}
+
+
+.map-location {
+    display: block;
+    margin: 0 auto;
+}
+
+.section-location div ul {
+    list-style: none;
+    width: 100%;
+}
+
+.section-location div ul li { margin-top: 5%; }
+
+.section-location div ul li i{
+    font-size: 150%;
+    vertical-align: middle;
+    margin-right: 15px;
+    
+}
+
+.section-location div ul li p {
+    font-size: 105%;
+    font-weight: 400;
+}
+
 
 /*-----------------------------------------------------------------*/
 /*------------------------ Seccion 2 Hotel ------------------------*/
@@ -214,7 +245,7 @@ header {
 .section-customers {
     height: 100vh;
     width: auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img-backgrounds/fondo-testimonials.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img-backgrounds/rio2.jpg);
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -256,9 +287,12 @@ cite img {
 /*----------------------- Seccion 4 Contacto -----------------------*/
 
 .contact-form {
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     font-size: 90%;
+    background-color: #f4f4f4;
+    padding: 15px 20px;
+    border-radius: 10px;
 }
 
 input[type=text],
