@@ -38,4 +38,16 @@ $(document).ready(function (){
           }
         }
       });
+    
+    /*-------------------- Sticky NavBar --------------------*/
+    
+    $('.js--section-us').waypoint(function(direction) {
+        if (direction == 'down') {
+            $('nav').addClass('sticky');
+        } else {
+            $('nav').removeClass('sticky');
+        }
+    }, {
+        offset: '50px'
+    })
 })
