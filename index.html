@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="external/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="external/css/grid.css">
         <link rel="stylesheet" type="text/css" href="external/css/ionicons.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400" rel="stylesheet">  
+        <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css"> 
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <title>Hotel Ipanema</title>
     </head>
     <body>
@@ -17,45 +19,63 @@
                         <i class="ion-ios-star-half"></i><p>Hotel Ipanema</p>  
                     </div>
                     <ul class="main-nav">
-                        <li><a href="#">Ubicación</a></li>
-                        <li><a href="#">Servicios</a></li>
-                        <li><a href="#">Testimonios</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li><a href="#us">Nosotros</a></li>
+                        <li><a href="#services">Servicios</a></li>
+                        <li><a href="#customers">Testimonios</a></li>
+                        <li><a href="#contact">Contacto</a></li>
                     </ul>
                 </div>
             </nav>
             <div class="text-box">
                 <h1>Es un placer conocerlo.</h1>
-                <a href="#" class="btn btn-full">Reservar</a>
-                <a href="#" class="btn btn-empty">Ver más</a>
+                <a href="#booking" class="btn btn-full">Reservar</a>
+                <a href="#us" class="btn btn-empty">Ver más</a>
             </div>
         </header>
-        <!----------------------------------------------------- Seccion 1 Ubicacion ----------------------------------------------------->
-        <section class="section-location">
+        <!------------------------------------------------------- Seccion 1 Nosotros ------------------------------------------------------->
+        <section class="section-us" id="us">
            <div class="row">
-               <h2>Nuestra ubicacion</h2>
+               <h2>Nosotros</h2>
            </div>
             <div class="row">
-               <div class="col span-2-of-3">
-                      <iframe class="map-location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.059266379202!2d-43.20393968545499!3d-22.986605984971266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU5JzExLjgiUyA0M8KwMTInMDYuMyJX!5e1!3m2!1ses!2sar!4v1527463235446" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>  
-               </div>
-               <div class="col span-1-of-3">
-                    <ul>
-                        <li>
-                            
-                            <p><i class="ion-location"></i>Avenida Veira Souto 258 <br> Río de Janeiro | Brasil.</p>
-                        </li>
-                        <li>
-                            <p><i class="ion-ios-telephone"></i>+55 21 2247-6347</p>
-                        </li>
-                        <li>
-                            <p><i class="ion-android-sunny"></i>A metros de la playa.</p>
-                        </li>
-                        <li>
-                            <p><i class="ion-plane"></i>A 30 minutos del Aeropuerto Internacional Tom Jobim.</p>
-                        </li>
-                    </ul>
-               </div>
+               <div class="row">
+                   <div class="col span-1-of-2 hotel-location hotel-location-tablet">
+                      <h3>Ubicacion</h3>
+                       <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.059266379202!2d-43.20393968545499!3d-22.986605984971266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU5JzExLjgiUyA0M8KwMTInMDYuMyJX!5e1!3m2!1ses!2sar!4v1527463235446" width="80%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe> 
+                   </div>
+                   <div class="col span-1-of-2 hotel-services-tablet" id="services">
+                       <div class="hotel-services">
+                            <h3>Servicios Incluídos</h3>
+                            <ul>
+                                <li><i class="ion-clock"></i><p>Room Service.</p></li>
+                                <li><i class="ion-android-sunny"></i><p>Piscina.</p></li>
+                                <li><i class="ion-ios-game-controller-b"></i><p>Salón de juegos.</p></li>
+                            </ul>
+                            <ul>
+                                <li><i class="ion-android-restaurant"></i><p>Restaurant.</p></li>
+                                <li><i class="ion-wineglass"></i><p>Bar.</p></li>
+                                <li><i class="ion-thermometer"></i><p>Sauna.</p></li>
+                            </ul>
+                            <ul>
+                                <li><i class="ion-wifi"></i><p>Internet Wi-fi 24hs.</p></li>
+                                <li><i class="ion-locked"></i><p>Caja de Seguridad.</p></li>
+                                <li><i class="ion-ios-snowy"></i><p>Aire Acondicionado.</p></li>                                
+                            </ul>
+                       </div>
+                   </div>
+                   <div class="hotel-info">
+                       <h3>El Hotel</h3>
+                       <img src="resources/img/hotel.jpg" alt="hotel">
+                        <p>El moderno Hotel Ipanema de 4 estrellas goza de una ubicación estratégica en la localidad brasileña de Río de Janeiro, entre las famosas playas de Copacabana e Ipanema.</p>
+                        <p>Ofrece una terraza con área de piscina y solárium así como unas impresionantes vistas sobre la ciudad y el mar. </p>
+                        <p>Las 61 habitaciones están decoradas en tonos claros y cuentan todas con piso de cerámica. Las habitaciones estándar poseen aire acondicionado, acceso gratuito a Internet y balcón.</p>
+                        <p>El restaurante del hotel ofrece asimismo un buffet de desayuno y servicio a la carta para almuerzos y cenas. </p>
+                        <p>Las instalaciones incluyen un amplio salón adaptado para cualquier tipo de evento ya sea profesional o social. </p>
+                        <p>Las playas está frente al hotel y el Cristo Redentor y el Pan de Azúcar a 30 minutos en coche.</p>
+                        <p> Todas las habitaciones son de tamaño medio, están en buenas condiciones y cuentan con cuartos de baño privados que están en condiciones adecuadas. </p>
+                        <p>La decoración es al estilo de los 60, con suelos de moqueta y paredes en un blanco lavado. Están adornadas con cuadros y plantas y las de los pisos superiores tienen vistas al mar.   
+                   </div>
+               </div>                  
             </div>
         </section>
         <!------------------------------------------------------- Seccion 2 Hotel ------------------------------------------------------->
@@ -107,24 +127,24 @@
             
         </section>
         <!---------------------------------------------------- Seccion 3 Testimonios ---------------------------------------------------->
-        <section class="section-customers">
+        <section class="section-customers" id="customers">
             <div class="row">
                 <h2>Nuestros clientes nos avalan</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-3 comment-tablet">
                     <blockquote>
                        I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. 
                         <cite><img src="resources/img/groot.jpg" alt="imagen de Groot"> Groot</cite>
                     </blockquote>
                 </div>
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-3 comment-tablet">
                     <blockquote>
                        I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. 
                         <cite><img src="resources/img/groot.jpg" alt="imagen de Groot"> Groot</cite>
                     </blockquote>
                 </div>
-                <div class="col span-1-of-3">
+                <div class="col span-1-of-3 comment-tablet">
                     <blockquote>
                        I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. I'm Groot. 
                         <cite><img src="resources/img/groot.jpg" alt="imagen de Groot"> Groot</cite>
@@ -132,13 +152,14 @@
                 </div>
             </div>
         </section>
+
         <!------------------------------------------------------ Seccion 4 Contacto ----------------------------------------------------->
-        <section class="section-contact">
+        <section class="section-contact" id="contact">
             <div class="row">
                 <h2>Nos alegra saber de usted</h2>
             </div>
             <div class="row">
-                <form action="#" method="get" class="contact-form">
+                <form action="mailto:matias.scalella@gmail.com" method="post" enctype="text/plain" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
                             <label for="fullName">Nombre y Apellido</label>
@@ -196,11 +217,95 @@
                             <input type="submit" value="Enviar">
                         </div>
                     </div>
-                    
                 </form>
             </div>
         </section>
-        <!------------------------------------------------------- Seccion 5 Footer ------------------------------------------------------>
+        
+        <!------------------------------------------------------ Seccion 5 Reservar ----------------------------------------------------->
+        <section class="section-booking" id="booking">
+            <div class="row">
+                <h2>Reserve su habitacion</h2>
+            </div>
+            <div class="row">
+                <form action="#" method="get" class="booking-form">
+                   <div class="row">
+                   </div>
+                    <div class="row">
+                        <div class="col span-1-of-2">
+                            <label for="chkInDate">Check In</label>
+                            <input type="date" name="chkInDate" required>
+                        </div>
+                        <div class="col span-1-of-2">
+                            <label for="chkOutDate">Check Out</label>
+                            <input type="date" name="chkOutDate" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label for="room">Habitacion</label>
+                        <select name="room" class="select-room">
+                            <option value="" disabled selected>Seleccione Habitación</option>
+                            <option value="simple">Simple</option>
+                            <option value="double">Doble</option>
+                            <option value="simpleLuxury">Simple Lujosa</option>
+                            <option value="marriedLuxury">Matrimonial</option>
+                        </select>                      
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-2 select-adults">
+                            <label for="adults">Adultos</label>
+                            <select name="adults">
+                               <!--<option value="" disabled selected>Cantidad de Adultos</option>-->
+                               <option value="1_adults">1</option>
+                               <option value="2_adults">2</option>
+                               <option value="3_adults">3</option>
+                               <option value="4_adults">4</option>
+                               <option value="5_adults">5</option>
+                               <option value="6_adults">6</option>                                  
+                             </select>
+                        </div>
+                        <div class="col span-1-of-2 select-kids">
+                            <label for="kids">Niños</label>
+                            <select name="kids">
+                                <!--<option value="" disabled selected>Cantidad de Niños</option>-->
+                                <option value="0_kids">0</option>
+                                <option value="1_kids">1</option>
+                                <option value="2_kids">2</option>
+                                <option value="3_kids">3</option>
+                                <option value="4_kids">4</option>
+                             </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="fullName1">Nombre y apellido</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="fullName1" placeholder="Ingrese su nombre completo" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="email1">Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" name="email1" placeholder="Ingrese su correo electrónico." required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="phone1">Teléfono</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="tel" name="phone1" placeholder="Ingrese su teléfono.">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="Reservar">
+                    </div>
+                </form>
+            </div>      
+        </section>
+        <!------------------------------------------------------- Seccion 6 Footer ------------------------------------------------------>
         <footer>
            <div class="row">
                <div class="footer-logo">
@@ -209,15 +314,19 @@
             </div>
             <div class="row">
                 <ul class="footer-social">
-                    <li><a href="#"><i class="ion-social-facebook"></i></a></li>
-                    <li><a href="#"><i class="ion-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="ion-social-instagram"></i></a></li>
-                    <li><a href="#"><i class="ion-social-youtube"></i></a></li>                     
+                    <li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="ion-social-instagram"></i></a></li>
+                    <li><a href="#" target="_blank"><i class="ion-social-youtube"></i></a></li>                     
                 </ul> 
             </div>
             <div class="row">
                 <p class="author">&copy; 2018 &minus; Matías Scalella</p>
             </div>
         </footer>
+        
+        <!------------------------------------- Scripts ------------------------------------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="resources/js/script.js"></script> 
     </body>
 </html>

@@ -1,0 +1,158 @@
+/*------------------------ Pantallas ------------------------*/
+@media only screen and (max-width: 1200px) {
+    
+    .text-box {
+        width: 100%; 
+        padding: 0 2%;
+    }
+    
+    .text-box h1 { font-size: 250%; }
+    
+    .row { padding: 0 2%; }
+
+    section { padding: 50px 0; }
+
+/*-------------------- Tablets grandes --------------------*/
+@media only screen and (max-width: 1023px) {
+    
+    .hotel-location-tablet {
+        display: block;
+        width: 100%;
+    }
+    
+    .hotel-services-tablet {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .hotel-services {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+    .comment-tablet { font-size: 90%; }
+    
+    .contact-form { width: 90%; }
+    
+    .booking-form {
+        width: 90%;
+        padding: 10px 20px;
+    }
+    
+    .hotel-pictures-row li {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+
+/*-------------------- Tablets pequeñas --------------------*/
+}@media only screen and (max-width: 830px) {
+    
+    .main-nav { font-size: 80%; }
+    
+    .comment-tablet {
+        width: 100%;
+        font-size: 85%;
+    }
+    
+    blockquote { margin-top: 10px; }
+    
+    blockquote::before {
+        font-size: 400%;
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    
+    cite {
+        position: absolute;
+        right: 3%;
+        top: 0;
+    }
+    
+    .contact-form { width: 100%; }
+    
+    .booking-form {
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/*-------------------- Telefonos grandes --------------------*/
+@media only screen and (max-width: 767px) {
+    
+    .text-box h1 {
+        font-size: 250%;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+    
+    .text-box { text-align: center; }
+    
+    .hotel-services { width: 100%; }
+    
+    .hotel-info img {
+        float: none;
+        width: 95%;
+        margin: 10% 2.5%;
+    }
+    
+    .section-us h2 { display: none; }
+    
+    .section-us h3 {
+        font-size: 180%;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 500;
+    }
+    
+    .hotel-info p {
+        line-height: 135%;
+        font-size: 100%;
+        margin-bottom: 30px;
+        font-weight: 400;
+    }
+    
+    .hotel-pictures-row li { 
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .section-customers { height: auto; }
+    
+    h2 {
+        font-size: 120%;
+        font-weight: 400;
+    }
+    
+    cite {
+        position: relative;
+        font-size: 100%;
+        margin-top: 10px;
+        display: block;
+        text-align: right;
+    }
+    
+    .contact-form .span-1-of-3 { display: none; }
+    
+    .contact-form .span-2-of-3 { width: 100%; }
+    
+    .contact-form input[type=date]:before { content: "Fecha de su visita "; }
+    
+    .contact-form input[type=submit] {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .contact-form { text-align: center; }
+    
+}
+
+
+/*-------------------- Telefonos pequeños --------------------*/
+@media only screen and (max-width: 480px) {
+    
+}
+
