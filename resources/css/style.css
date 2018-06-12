@@ -8,6 +8,7 @@ cyan secundario #005858
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -81,6 +82,7 @@ input[type=submit] {
     text-decoration: none;
     border-radius: 200px;
     color: #fff;
+    -webkit-transition: background-color 0.2s;
     transition: background-color 0.2s;
 }
 
@@ -107,6 +109,7 @@ input[type=submit]:active { /* Section 0 Header */
 /*--------------------- Seccion 0 Principal ---------------------*/
 
 header {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(26, 26, 26, 0.5)), to(rgba(0, 0, 0, 0.9))), url(img-backgrounds/rio.jpg);
     background-image: linear-gradient(rgba(26, 26, 26, 0.5), rgba(0, 0, 0, 0.9)), url(img-backgrounds/rio.jpg);
     background-size: cover;
     background-position: center;
@@ -120,6 +123,7 @@ header {
     width: 1140px;
     top: 60%;
     left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);    
 }
 
@@ -160,6 +164,7 @@ header {
     text-transform: uppercase;
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
 }
 
@@ -189,6 +194,7 @@ header {
 .sticky .main-nav li a:visited {
     padding-bottom: 5px;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
     transition: border-bottom 0.3s;
 }
 
@@ -227,6 +233,7 @@ header {
     width: 45%;
     float: right;
     margin: 0 25px;
+    -webkit-box-shadow: 6px 7px 9px 0px rgba(0,0,0,0.75);
     box-shadow: 6px 7px 9px 0px rgba(0,0,0,0.75);
     border-radius: 15px;
 }
@@ -240,6 +247,7 @@ header {
 
 .hotel-location iframe {
     margin-left: 10%;
+    -webkit-box-shadow: 6px 7px 9px 0px rgba(0,0,0,0.75);
     box-shadow: 6px 7px 9px 0px rgba(0,0,0,0.75);
 }
 
@@ -305,12 +313,17 @@ header {
     width: 100%;
     height: auto;
     margin: 0;
+    -webkit-transform: scale(1.15);
     transform: scale(1.15); /* escalo la imagen un 15% más del tamaño que debe tener */
+    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+    transition: opacity 0.5s, -webkit-transform 0.5s;
     transition: transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .hotel-photo img:hover{
     opacity: 1;
+    -webkit-transform: scale(1.04);
     transform: scale(1.04);
 }
 
@@ -320,6 +333,7 @@ header {
 .section-customers {
     height: 100vh;
     width: auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img-backgrounds/rio2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img-backgrounds/rio2.jpg);
     background-size: cover;
     background-attachment: fixed;
@@ -407,6 +421,7 @@ input[type=checkbox] {
     color: #fff;
     height: auto;
     width: auto;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, 0.3)), to(rgba(0,0,0, 0.3))), url(img-backgrounds/form-back.jpg);
     background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url(img-backgrounds/form-back.jpg);
     background-size: cover;
     background-position: center;
@@ -510,6 +525,7 @@ footer {
 .ion-social-instagram,
 .ion-social-youtube {
     color: #bababa;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
