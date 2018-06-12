@@ -49,7 +49,11 @@
 /*-------------------- Tablets pequeñas --------------------*/
 }@media only screen and (max-width: 830px) {
     
-    .main-nav { font-size: 80%; }
+    .main-nav { font-size: 85%; }
+    
+    .section-customers {
+        height: auto;
+    }
     
     .comment-tablet {
         width: 100%;
@@ -67,9 +71,8 @@
     }
     
     cite {
-        position: absolute;
-        right: 3%;
-        top: 0;
+        text-align: right;
+        margin-right: 15%;
     }
     
     .contact-form { width: 100%; }
@@ -120,7 +123,10 @@
         margin-left: 0%;
     }
     
-    .section-customers { height: auto; }
+    .section-customers {
+        padding-top: 90px;
+        height: auto; 
+    }
     
     h2 {
         font-size: 120%;
@@ -148,6 +154,42 @@
     
     .contact-form { text-align: center; }
     
+    /* ----------------- Mobile NavBar ----------------- */
+    
+    .mobile-nav-icon { 
+        display: inline-block;
+        font-size: 150%;
+        cursor: pointer;
+        position: absolute;
+        top: 25px;
+        right: 5%;
+        color: #fff;
+    }
+    .main-nav { display: none; }
+    .main-nav {
+        float: left;
+        margin-top: 25px;
+        margin-left: 15px;
+    }
+    
+    .main-nav li { display: block; }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        padding: 10px 0;
+        border: 0;
+        font-size: 115%;
+    }
+    
+    .sticky .mobile-nav-icon { top: 15px; }
+    
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        border: 0;
+        padding-top: 5px;
+        margin-bottom: 5px;
+    }
 }
 
 

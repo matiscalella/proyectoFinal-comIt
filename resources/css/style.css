@@ -168,11 +168,12 @@ header {
     border-bottom: 2px solid #008b8b;
 }
 
+.mobile-nav-icon { display: none; }
 
 /*------------ Sticky NavBar ------------*/
 
 .sticky {
-    background-color: rgba(0, 139, 139, 0.98);
+    background-color: rgba(44, 44, 44, 0.95);
     width: 100%;
     position: fixed;
     top: 0;
@@ -192,7 +193,7 @@ header {
 }
 
 .sticky .main-nav li a:hover,
-.sticky .main-nav li a:active { border-bottom: 2px solid #fff; }
+.sticky .main-nav li a:active { border-bottom: 2px solid #008b8b; }
 
 
 /*------------------------------------------------------------------*/
