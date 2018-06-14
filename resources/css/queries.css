@@ -11,6 +11,8 @@
     .row { padding: 0 2%; }
 
     section { padding: 50px 0; }
+    
+    .section-customers { height: auto; }
 
 /*-------------------- Tablets grandes --------------------*/
 @media only screen and (max-width: 1023px) {

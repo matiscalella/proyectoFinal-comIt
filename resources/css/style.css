@@ -103,6 +103,7 @@ input[type=submit]{ /* Section 0 Header */
 input[type=submit]:hover,
 input[type=submit]:active { /* Section 0 Header */
     background-color: #005858;
+    cursor: pointer;
 }
 
 /*---------------------------------------------------------------*/
@@ -367,7 +368,7 @@ cite {
 
 cite img {
     border-radius: 50%;
-    width: 50px;
+    width: 60px;
     margin-right: 10px;
     vertical-align: middle;
 }
